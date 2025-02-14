@@ -1,0 +1,129 @@
+What is the output of the following code?
+printf("%d", 5+3*2);
+---
+8
+11
+16
+13
+b
+
+Which of the following is a valid variable name in C?
+---
+int 1variable;
+int variable_1;
+int variable-1;
+int variable 1;
+b
+
+What is the size of an int data type in C?
+---
+2 bytes
+4 bytes
+8 bytes
+16 bytes
+b
+
+Which of the following is used to read a string in C?
+---
+scanf()
+printf()
+gets()
+puts()
+c
+
+Which of the following is not a valid storage class in C?
+---
+auto
+register
+static
+volatile
+d
+
+What is the output of the following code?
+int a = 10;
+printf("%d", a++);
+---
+10
+11
+9
+12
+a
+
+Which of the following is a logical operator in C?
+---
+&
+|
+&&
+%
+c
+
+What is the default return type of a function in C if not specified?
+---
+int
+void
+float
+char
+a
+
+Which of the following is used to allocate memory dynamically in C?
+---
+malloc()
+scanf()
+printf()
+free()
+a
+
+What is the output of the following code?
+int a = 5, b = 10;
+printf("%d", a > b ? a : b);
+---
+5
+10
+0
+15
+b
+
+Which of the following is not a loop structure in C?
+---
+for
+while
+do-while
+repeat-until
+d
+
+What is the output of the following code?
+int a = 5;
+printf("%d", a == 5);
+---
+0
+1
+5
+10
+b
+
+Which of the following is used to define a constant in C?
+---
+#define
+const
+constant
+static
+a
+
+What is the output of the following code?
+int a = 5;
+a += 5;
+printf("%d", a);
+---
+5
+10
+15
+20
+b
+
+Which of the following is not a valid preprocessor directive in C?
+---
+#include
+#define
+#main
+#undef
+c

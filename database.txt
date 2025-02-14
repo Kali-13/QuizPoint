@@ -1,0 +1,119 @@
+What is a primary key in a database?
+---
+A unique identifier for a record
+A duplicate record
+A foreign key
+A non-unique identifier
+a
+
+Which SQL statement is used to extract data from a database?
+---
+INSERT
+UPDATE
+SELECT
+DELETE
+c
+
+What does SQL stand for?
+---
+Structured Query Language
+Structured Question Language
+Simple Query Language
+Simple Question Language
+a
+
+Which of the following is a type of join in SQL?
+---
+INNER JOIN
+OUTER JOIN
+LEFT JOIN
+All of the above
+d
+
+What is a foreign key?
+---
+A unique identifier for a record
+A key used to link two tables
+A key that is not unique
+A key that is not used
+b
+
+Which command is used to remove a table from a database?
+---
+DELETE
+DROP
+REMOVE
+ERASE
+b
+
+What is normalization in databases?
+---
+Organizing data to reduce redundancy
+Creating duplicate records
+Deleting unnecessary data
+Increasing data redundancy
+a
+
+Which of the following is a NoSQL database?
+---
+MySQL
+PostgreSQL
+MongoDB
+SQLite
+c
+
+What is the purpose of the GROUP BY clause in SQL?
+---
+To filter records
+To sort records
+To group records with the same values
+To delete records
+c
+
+Which of the following is a valid SQL data type?
+---
+INTEGER
+STRING
+CHARACTER
+NUMBER
+a
+
+What is a transaction in a database?
+---
+A single unit of work
+A duplicate record
+A backup of the database
+A type of join
+a
+
+Which SQL clause is used to filter records?
+---
+WHERE
+ORDER BY
+GROUP BY
+HAVING
+a
+
+What is a view in a database?
+---
+A virtual table
+A physical table
+A duplicate table
+A backup of the database
+a
+
+Which of the following is an aggregate function in SQL?
+---
+SUM
+JOIN
+INSERT
+UPDATE
+a
+
+What is the purpose of the HAVING clause in SQL?
+---
+To filter records after grouping
+To sort records
+To delete records
+To update records
+a

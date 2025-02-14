@@ -1,0 +1,119 @@
+What is the main function of the Network Layer in the OSI model?
+---
+Routing
+Error detection
+Data formatting
+Session management
+a
+
+Which protocol is used to send an email?
+---
+HTTP
+FTP
+SMTP
+SNMP
+c
+
+What does the acronym LAN stand for?
+---
+Local Area Network
+Large Area Network
+Long Area Network
+Local Access Network
+a
+
+Which device is used to connect multiple networks together?
+---
+Switch
+Router
+Hub
+Repeater
+b
+
+What is the primary purpose of a firewall?
+---
+To filter incoming and outgoing traffic
+To increase network speed
+To connect different networks
+To manage IP addresses
+a
+
+Which protocol is used for secure communication over the internet?
+---
+HTTP
+FTP
+SMTP
+HTTPS
+d
+
+What is the maximum length of a CAT5 cable?
+---
+50 meters
+100 meters
+150 meters
+200 meters
+b
+
+Which layer of the OSI model is responsible for data encryption?
+---
+Physical Layer
+Data Link Layer
+Network Layer
+Presentation Layer
+d
+
+What is the default port number for HTTP?
+---
+21
+25
+80
+443
+c
+
+Which protocol is used for remote login to a computer?
+---
+FTP
+Telnet
+SMTP
+SNMP
+b
+
+What is the primary function of a DNS server?
+---
+To translate domain names to IP addresses
+To manage email delivery
+To route data packets
+To encrypt data
+a
+
+Which topology has a central hub to which all nodes are connected?
+---
+Bus topology
+Ring topology
+Star topology
+Mesh topology
+c
+
+What is the main purpose of a subnet mask?
+---
+To identify the network portion of an IP address
+To encrypt data
+To manage network traffic
+To assign IP addresses
+a
+
+Which protocol is used to transfer files between computers on a network?
+---
+HTTP
+FTP
+SMTP
+SNMP
+b
+
+What is the primary function of the Transport Layer in the OSI model?
+---
+Routing
+Error detection and correction
+Data encryption
+Session management
+b

@@ -1,0 +1,119 @@
+What is the main function of an operating system?
+---
+Manage hardware resources
+Provide user interface
+Run applications
+All of the above
+d
+
+Which of the following is not an operating system?
+---
+Windows
+Linux
+Oracle
+MacOS
+c
+
+What is the core of an operating system?
+---
+Shell
+Kernel
+Command Line Interface
+System Call
+b
+
+Which operating system is developed by Apple Inc.?
+---
+Windows
+Linux
+MacOS
+Unix
+c
+
+Which of the following is a mobile operating system?
+---
+Windows
+Linux
+Android
+Unix
+c
+
+What is the purpose of a device driver?
+---
+To manage hardware devices
+To provide user interface
+To run applications
+To manage memory
+a
+
+Which of the following is a real-time operating system?
+---
+Windows
+Linux
+RTOS
+MacOS
+c
+
+What is the main advantage of a multi-user operating system?
+---
+Faster processing
+Resource sharing
+Better security
+Ease of use
+b
+
+Which of the following is an example of open-source operating system?
+---
+Windows
+Linux
+MacOS
+iOS
+b
+
+What is the function of the file system in an operating system?
+---
+Manage files and directories
+Manage hardware resources
+Provide user interface
+Run applications
+a
+
+Which of the following is not a type of operating system?
+---
+Batch
+Time-sharing
+Distributed
+Centralized
+d
+
+What is the purpose of virtual memory in an operating system?
+---
+To increase RAM
+To provide additional storage
+To manage memory
+To run applications
+c
+
+Which of the following is a command-line operating system?
+---
+Windows
+Linux
+MacOS
+DOS
+d
+
+What is the main function of the process scheduler in an operating system?
+---
+Manage memory
+Manage files
+Manage processes
+Manage hardware
+c
+
+Which of the following is a network operating system?
+---
+Windows
+Linux
+Unix
+All of the above
+d
