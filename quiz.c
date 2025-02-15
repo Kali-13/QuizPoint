@@ -14,6 +14,15 @@ typedef struct
     char options[4][MAX_LINE_LENGTH];
     char correctOption;
 } Question;
+
+const char *PINK = "\033[0;35m";
+const char *RED = "\033[0;31m";
+const char *GREEN = "\033[0;32m";
+const char *YELLOW = "\033[0;33m";
+const char *BLUE = "\033[0;34m";
+const char *CYAN = "\033[0;36m";
+const char *WHITE = "\033[0;37m";
+const char *COL_END = "\033[0m";
 Question *questions = NULL;
 const int totalSubjects = 4;
 int questionCount = 0;
@@ -23,11 +32,12 @@ char subjects[totalSubjects + 1][70] = {"Operating Sysytem", "Computer Network",
 char subjectsFile[totalSubjects][70] = {"operating.txt", "networking.txt", "database.txt", "programming.txt"};
 int main()
 {
+    printf("\t\t\t\t%s!!!WELCOME TO QUIZ TRIVIA!!!%s\n", PINK, COL_END);
 
     printf("%s\n", "Which Subject you want to play quiz on?");
     for (int i = 0; i < totalSubjects + 1; i++)
     {
-        printf("%d. %s\n", i + 1, subjects[i]);
+        printf("%s%d. %s%s\n", WHITE, i + 1, subjects[i], COL_END);
     }
 
     int input;
@@ -90,10 +100,10 @@ bool checkAnswer(char answer, char correctOption)
 }
 void displayQuestion(Question q)
 {
-    printf("\nQ: %s\n", q.question);
+    printf("\n%sQ: %s%s\n", CYAN, q.question, COL_END);
     for (int i = 0; i < 4; i++)
     {
-        printf("%c) %s\n", 'a' + i, q.options[i]);
+        printf("%s%c) %s%s\n", YELLOW, 'a' + i, q.options[i], COL_END);
     }
 }
 void displayResult()
@@ -110,14 +120,14 @@ void displayResult()
     {
         printf("\nYOU ARE A CHAMP\n");
     }
-    printf("Your Final Score Is %d/%d\n", score, answeredQuestions);
+    printf("Your Final Score Is %s%d/%d%s\n", GREEN, score, answeredQuestions, COL_END);
     free(questions);
 }
 void menu()
 {
-    printf("1. Go to Subjects\n");
-    printf("2. Exit\n");
-    printf("3. Continue\n");
+    printf("%s1. Go to Subjects%s\n", WHITE, COL_END);
+    printf("%s2. Exit%s\n", WHITE, COL_END);
+    printf("%s3. Continue%s\n", WHITE, COL_END);
     int input;
     printf("Enter your choice: ");
     scanf("%d", &input);
@@ -154,7 +164,7 @@ void playQuiz()
     for (int i = 0; i < questionCount; i++)
     {
         displayQuestion(questions[i]);
-        printf("Enter your answer (a/b/c/d/m): ");
+        printf("%sEnter your answer (a/b/c/d/m): %s", BLUE, COL_END);
 
         scanf(" %c", &answer);
         if (answer >= 'a' && answer <= 'd')
@@ -162,11 +172,11 @@ void playQuiz()
             if (checkAnswer(answer, questions[i].correctOption))
             {
                 score++;
-                printf("Correct!\n");
+                printf("%sCorrect!%s\n", GREEN, COL_END);
             }
             else
             {
-                printf("Wrong! Correct answer is %c. %s\n", questions[i].correctOption, questions[i].options[questions[i].correctOption - 'a']);
+                printf("%sWrong! Correct answer is %c) %s%s\n", RED, questions[i].correctOption, questions[i].options[questions[i].correctOption - 'a'], COL_END);
             }
         }
         else
