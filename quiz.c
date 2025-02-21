@@ -3,6 +3,9 @@
 #include <stdbool.h>
 #include <math.h>
 #include <string.h>
+#include <time.h>
+#include <unistd.h>
+#include <ctype.h>
 #define MAX_LINE_LENGTH 300
 
 void loadQuestions(const char *filename);
@@ -23,6 +26,7 @@ const char *BLUE = "\033[0;34m";
 const char *CYAN = "\033[0;36m";
 const char *WHITE = "\033[0;37m";
 const char *COL_END = "\033[0m";
+volatile int time_out = 0;
 Question *questions = NULL;
 const int totalSubjects = 4;
 int questionCount = 0;
@@ -98,6 +102,11 @@ bool checkAnswer(char answer, char correctOption)
 {
     return answer == correctOption;
 }
+void time_out_handler()
+{
+    time_out = 1;
+    printf("\n%sTime Out! press any key...%s\n", RED, COL_END);
+}
 void displayQuestion(Question q)
 {
     printf("\n%sQ: %s%s\n", CYAN, q.question, COL_END);
@@ -105,6 +114,7 @@ void displayQuestion(Question q)
     {
         printf("%s%c) %s%s\n", YELLOW, 'a' + i, q.options[i], COL_END);
     }
+    signal(SIGALRM, time_out_handler);
 }
 void displayResult()
 {
@@ -164,10 +174,18 @@ void playQuiz()
     for (int i = 0; i < questionCount; i++)
     {
         displayQuestion(questions[i]);
-        printf("%sEnter your answer (a/b/c/d/m): %s", BLUE, COL_END);
+        printf("%s You have only 10 sec to answer %s\n", GREEN, COL_END);
+        printf("%sEnter your answer (a/b/c/d) or m for menu: %s", BLUE, COL_END);
+        alarm(10);
 
         scanf(" %c", &answer);
-        if (answer >= 'a' && answer <= 'd')
+        alarm(0);
+        if (time_out)
+        {
+            time_out = 0;
+            break;
+        }
+        if (tolower(answer) >= 'a' && tolower(answer) <= 'd')
         {
             if (checkAnswer(answer, questions[i].correctOption))
             {
